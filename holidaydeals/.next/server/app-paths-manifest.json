@@ -1,0 +1,16 @@
+{
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(site)/blog/[slug]/page": "app/(site)/blog/[slug]/page.js",
+  "/(site)/tours/[slug]/page": "app/(site)/tours/[slug]/page.js",
+  "/(site)/(auth)/signin/page": "app/(site)/(auth)/signin/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(site)/blog/page": "app/(site)/blog/page.js",
+  "/(site)/(auth)/signup/page": "app/(site)/(auth)/signup/page.js",
+  "/(site)/contact/page": "app/(site)/contact/page.js",
+  "/(site)/documentation/page": "app/(site)/documentation/page.js",
+  "/(site)/features/page": "app/(site)/features/page.js",
+  "/(site)/tours/page": "app/(site)/tours/page.js",
+  "/(site)/destination/page": "app/(site)/destination/page.js",
+  "/page": "app/page.js"
+}

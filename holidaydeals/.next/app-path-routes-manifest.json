@@ -1,0 +1,16 @@
+{
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/favicon.ico/route": "/favicon.ico",
+  "/(site)/blog/[slug]/page": "/blog/[slug]",
+  "/(site)/tours/[slug]/page": "/tours/[slug]",
+  "/(site)/(auth)/signin/page": "/signin",
+  "/_not-found/page": "/_not-found",
+  "/(site)/blog/page": "/blog",
+  "/(site)/(auth)/signup/page": "/signup",
+  "/(site)/contact/page": "/contact",
+  "/(site)/documentation/page": "/documentation",
+  "/(site)/features/page": "/features",
+  "/(site)/tours/page": "/tours",
+  "/(site)/destination/page": "/destination",
+  "/page": "/"
+}
