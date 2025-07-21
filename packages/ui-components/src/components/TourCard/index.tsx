@@ -1,18 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { TourCardProps } from '@travel-platform/shared-utils';
 
-type TourCardVariant = 'default' | 'luxury' | 'adventure' | 'family';
-
-const TourCard: React.FC<any> = ({
-  tour,
-  variant = 'default',
+const TourCard: React.FC<TourCardProps> = ({ 
+  tour, 
+  variant = 'default', 
   showPrice = true,
-  className = '',
-}: {
-  tour: any;
-  variant?: TourCardVariant;
-  showPrice?: boolean;
-  className?: string;
+  className = ''
 }) => {
   // Helper function to render stars
   const renderStars = (rating: number) => {
@@ -82,32 +76,30 @@ const TourCard: React.FC<any> = ({
     default: {
       card: 'bg-white dark:bg-gray-800',
       price: 'bg-blue-600',
-      title: 'group-hover:text-blue-600',
+      title: 'group-hover:text-blue-600'
     },
     luxury: {
       card: 'bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20',
       price: 'bg-yellow-600',
-      title: 'group-hover:text-yellow-600',
+      title: 'group-hover:text-yellow-600'
     },
     adventure: {
       card: 'bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20',
       price: 'bg-green-600',
-      title: 'group-hover:text-green-600',
+      title: 'group-hover:text-green-600'
     },
     family: {
       card: 'bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20',
       price: 'bg-pink-600',
-      title: 'group-hover:text-pink-600',
-    },
+      title: 'group-hover:text-pink-600'
+    }
   };
 
   const currentVariant = variantStyles[variant];
 
   return (
     <Link href={`/tours/${tour.slug}`} className={`group ${className}`}>
-      <div
-        className={`rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${currentVariant.card}`}
-      >
+      <div className={`rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${currentVariant.card}`}>
         <div className="relative overflow-hidden">
           <Image
             src={tour.image}
@@ -117,12 +109,9 @@ const TourCard: React.FC<any> = ({
             className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
           />
           {showPrice && (
-            <div
-              className={`absolute top-3 right-3 rounded-full py-1 px-4 ${currentVariant.price}`}
-            >
+            <div className={`absolute top-3 right-3 rounded-full py-1 px-4 ${currentVariant.price}`}>
               <p className="text-white font-medium text-sm">
-                {tour.pricing.currency}
-                {tour.pricing.basePrice}
+                {tour.pricing.currency}{tour.pricing.basePrice}
               </p>
             </div>
           )}
@@ -132,14 +121,12 @@ const TourCard: React.FC<any> = ({
             </div>
           )}
         </div>
-
+        
         <div className="p-6">
           <p className="text-base text-gray-600 dark:text-gray-400 mb-2">
             {tour.duration.days} Days / {tour.duration.nights} Nights
           </p>
-          <h4
-            className={`text-gray-900 dark:text-white text-xl font-semibold mb-3 ${currentVariant.title} transition-colors duration-300`}
-          >
+          <h4 className={`text-gray-900 dark:text-white text-xl font-semibold mb-3 ${currentVariant.title} transition-colors duration-300`}>
             {tour.title}
           </h4>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
@@ -159,4 +146,4 @@ const TourCard: React.FC<any> = ({
   );
 };
 
-export default TourCard;
+export default TourCard; 

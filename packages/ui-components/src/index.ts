@@ -5,4 +5,7 @@ export { default as Header } from './components/Header';
 export { default as Footer } from './components/Footer';
 
 // Export shared styles
-export * from './styles'; 
+export * from './styles';
+
+// Re-export types for convenience
+export type { HeroProps, TourCardProps, Tour, Destination } from '@travel-platform/shared-utils'; 
