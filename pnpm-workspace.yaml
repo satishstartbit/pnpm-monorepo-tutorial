@@ -3,3 +3,4 @@ packages:
   - 'packages/*'
   - 'holidaydeals'
   - 'luxury-travel'
+  - 'payloadcms'
