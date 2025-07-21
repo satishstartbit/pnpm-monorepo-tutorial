@@ -106,6 +106,97 @@ importers:
         specifier: ^5
         version: 5.8.3
 
+  luxury-travel:
+    dependencies:
+      '@iconify/icons-ion':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify/react':
+        specifier: ^5.0.1
+        version: 5.2.1(react@19.1.0)
+      '@travel-platform/shared-utils':
+        specifier: workspace:*
+        version: link:../packages/shared-utils
+      '@travel-platform/ui-components':
+        specifier: workspace:*
+        version: link:../packages/ui-components
+      aos:
+        specifier: ^2.3.4
+        version: 2.3.4
+      axios:
+        specifier: ^1.7.2
+        version: 1.10.0
+      date-fns:
+        specifier: ^3.4.0
+        version: 3.6.0
+      gray-matter:
+        specifier: ^4.0.3
+        version: 4.0.3
+      next:
+        specifier: ^15.1.1
+        version: 15.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      next-auth:
+        specifier: ^4.24.11
+        version: 4.24.11(next@15.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      next-themes:
+        specifier: ^0.3.0
+        version: 0.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nextjs-toploader:
+        specifier: ^3.7.15
+        version: 3.8.16(next@15.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react:
+        specifier: ^19.0.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.1.0(react@19.1.0)
+      react-hot-toast:
+        specifier: ^2.4.1
+        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-slick:
+        specifier: ^0.30.2
+        version: 0.30.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      remark:
+        specifier: ^15.0.1
+        version: 15.0.1
+      remark-html:
+        specifier: ^16.0.1
+        version: 16.0.1
+      slick-carousel:
+        specifier: ^1.8.1
+        version: 1.8.1(jquery@3.7.1)
+      swiper:
+        specifier: ^11.1.14
+        version: 11.2.10
+    devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.11
+      '@types/aos':
+        specifier: ^3.0.7
+        version: 3.0.7
+      '@types/node':
+        specifier: ^20
+        version: 20.19.9
+      '@types/react':
+        specifier: ^18
+        version: 18.3.23
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.3.7(@types/react@18.3.23)
+      '@types/react-slick':
+        specifier: ^0.23.13
+        version: 0.23.13
+      postcss:
+        specifier: ^8
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.11
+      typescript:
+        specifier: ^5
+        version: 5.8.3
+
   packages/shared-utils:
     dependencies:
       next:
